@@ -11,7 +11,6 @@
   /*transition of everything is set*/
   transition: all 0.3s;
 }
-
 /*header*/
 
 header {
@@ -235,18 +234,25 @@ a:hover {
 .section-2 {
   display: flex;
   margin-bottom: 2em;
+  flex-wrap: wrap;
 }
 
 .prospectus,
 .admissionform {
+  flex-grow: 1;
   width: 40%;
+  min-width: 500px;
   height: 200px;
-  margin: 2em 5% 0em 10%;
+  margin: 2em 5% 0em 5%;
   background-color: black;
   align-items: center;
   text-align: center;
   display: flex;
   justify-content: space-around;
+  flex-wrap: wrap;
+}
+:is(.prospectus, .admissionform) h2 {
+  width: 100%;
 }
 .section-2 div h2,
 button {
@@ -277,6 +283,47 @@ p {
   color: darkblue;
 }
 .courses {
-  height: 700px;
-  display: grid;
+  margin: 5% 0 5% 0;
+  /*display: grid;
+  grid-gap: 3px;
+  grid-template-columns: repeat(auto-fit, minmax(300px, max-content));
+  grid-auto-rows: 200px;*/
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.course {
+  background-color: bisque;
+  min-width: 300px;
+  height: 300px;
+  margin: 5px;
+  display: flex;
+  justify-content: space-around;
+  align-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  text-align: center;
+}
+.course h3 {
+  width: 100%;
+  padding: 1em;
+  color: darkblue;
+}
+.bt3 {
+  background-color: #d00000;
+  outline: none;
+  border: none;
+  padding: 0.5em 1em;
+}
+.bt3 span:first-child {
+  text-transform: uppercase;
+  vertical-align: middle;
+}
+.bt3 span {
+  font-size: 14px;
+}
+.material-icons {
+  display: inline-flex;
+  vertical-align: middle;
 }
