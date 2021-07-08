@@ -16,7 +16,7 @@
 header {
   --text: #d00000;
   --background: #ffffff;
-  --hovercolor: #ffffff75;
+  --hovercolor: #d0000052;
   overflow: hidden;
   display: flex;
   width: 100%;
@@ -151,7 +151,7 @@ a:hover {
 .welcome_scrolled {
   --text: #ffffff;
   --background: #d00000;
-  --hovercolor: #d0000052;
+  --hovercolor: #ffffff75;
 
   box-shadow: 0px;
 }
