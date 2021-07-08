@@ -1,0 +1,74 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+}
+.carousel{
+    height: 300px;
+    width: 90%;
+    margin-left: 5%;
+    margin-top: 100px;
+    /* position: relative; */
+    display: grid;
+    grid-template-columns: 180px auto 7px;
+}
+.left{
+    background: linear-gradient(red, orange, violet, blue);
+    position: relative;
+    padding: 4px;
+    border-radius: 10px;
+}
+.left-text{
+    background-color: black;
+    height: 100%;
+    width: 100%;
+    border-radius: 10px;
+    color: white;
+    padding: 10px;
+    font-size: 1.8em;
+    font-weight: 600;
+    display: flex;
+    align-items: flex-end;
+}
+.left-text p{
+    width: 100%;
+}
+.middle{
+    padding-top: 25px;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    white-space: nowrap;
+    margin-left: 20px;
+    /* margin-left: 20px; */
+}
+.card{
+    height: 235px;
+    width: 220px;
+    background-color: aqua;
+    border-radius: 10px;
+    display: inline-block;
+    padding: 10px;
+    position: relative;
+    font-size: 1.3em;
+    margin-right: -60px;
+    box-shadow: 2px 2px 5px 5px rgb(56, 56, 56);
+    word-wrap: break-word;
+    white-space: normal;
+    cursor: pointer;
+}
+.card:first-child{
+    margin-left: 30px;
+}
+.card:last-child{
+    margin-right: 20px;
+}
+.card:hover{
+    transform: rotate(-12deg);
+    margin-right: 50px;
+    transition-timing-function: ease-in-out;
+    transition-duration: 500ms;
+}
+.right{
+    background: linear-gradient(red, orange, violet, blue);
+}
