@@ -231,6 +231,7 @@ a:hover {
   text-transform: uppercase;
   padding-left: 10px;
 }
+
 .section-2 {
   display: flex;
   margin-bottom: 2em;
@@ -239,17 +240,25 @@ a:hover {
 
 .prospectus,
 .admissionform {
+  text-transform: uppercase;
   flex-grow: 1;
   width: 40%;
-  min-width: 500px;
-  height: 200px;
-  margin: 2em 5% 0em 5%;
+  min-width: 450px;
+  height: 150px;
+  margin: 2em 2.5% 0em 2.5%;
   background-color: black;
   align-items: center;
   text-align: center;
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
+  border-radius: 5px;
+}
+@media (max-width: 599px) {
+  .prospectus,
+  .admissionform {
+    min-width: 90%;
+  }
 }
 :is(.prospectus, .admissionform) h2 {
   width: 100%;
@@ -262,24 +271,28 @@ button {
   background-color: #d00000;
   outline: none;
   border: none;
-  padding: 1em 2em;
+  padding: 0.6em 1.2em;
+  text-transform: uppercase;
+  border-radius: 5px;
 }
 /*section-3*/
 .popular_courses {
   text-align: center;
-  padding: 2em;
   background-color: beige;
   color: darkblue;
 }
 .popular_courses h1,
 p {
-  padding: 2em 1em;
+  padding: 1.7em 1em;
   color: darkblue;
+}
+.popular_courses p {
+  line-height: 20px;
+  font: size 14px;
 }
 .popular_courses hr {
   width: 50%;
   margin: auto;
-  margin-top: 2em;
   color: darkblue;
 }
 .courses {
@@ -291,20 +304,27 @@ p {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  justify-content: space-around;
+  justify-content: space-evenly;
 }
 .course {
   background-color: bisque;
   min-width: 300px;
-  height: 300px;
+  height: 250px;
   margin: 5px;
   display: flex;
-  justify-content: space-around;
+  justify-content: left;
   align-content: center;
-  align-items: center;
+  align-items: left;
   flex-wrap: wrap;
-  text-align: center;
+  padding-left: 2em;
 }
+@media (max-width: 599px) {
+  .course {
+    min-width: 90%;
+    height: 250px;
+  }
+}
+
 .course h3 {
   width: 100%;
   padding: 1em;
@@ -327,9 +347,73 @@ p {
   display: inline-flex;
   vertical-align: middle;
 }
+/*
+for maintaining header (not completed for big screen)*/
+
+header {
+  height: 47px;
+  overflow: visible;
+}
+
+@media (max-width: 600px) {
+  .chk-btn span {
+    /* line-height: 80px; */
+    line-height: 50px;
+  }
+  header ul {
+    /* top: 80px; */
+    top: 47px;
+  }
+}
+
+header img {
+  z-index: 3;
+  position: sticky;
+}
+/**/
+/*
+for the scalling of parallax page
+also looks good on big page
+
+
+*** need to restyle the wholw shit****/
+
+.parallax h1,
+.button {
+  /* font-size: 40px; */
+  font-size: 30px;
+}
+
+.parallax .button h2 {
+  /* font-size: 20px; */
+  /* padding-left: 10px; */
+  font-size: 14px;
+  padding-left: 0px;
+}
+
+.parallax .button {
+  /* padding: 10px 30px; */
+  padding: 10px 14px;
+}
+
+.parallax .button span {
+  /* font-size: 20px; */
+  font-size: 16px;
+}
+
+/* for section 3 height adjustments */
+
+@media (max-width: 599px) {
+  .course {
+    /* height: 250px; */
+    height: 170px;
+  }
+}
+
+/**/
 
 /* Footer start */
-footer{
+footer {
   width: 100%;
   box-sizing: border-box;
   display: flex;
@@ -339,7 +423,7 @@ footer{
   background-color: rgba(0, 0, 0, 0.6);
   padding-bottom: 150px;
 }
-footer .go-back{
+footer .go-back {
   width: 100%;
   height: 100%;
   position: absolute;
@@ -347,39 +431,39 @@ footer .go-back{
   left: 0;
   z-index: -1;
 }
-.future{
+.future {
   font-size: 1.5em;
   font-weight: bolder;
   padding: 40px;
   color: #f7dc79;
   text-align: center;
 }
-footer hr{
+footer hr {
   width: 100px;
   height: 3px;
   background-color: #f7dc79;
   border: none;
 }
-.join{
+.join {
   font-size: 3em;
   padding-top: 10px;
-  padding-bottom: 30px; 
+  padding-bottom: 30px;
   font-weight: bolder;
   color: #f7dc79;
   text-align: center;
 }
-.learn-more{
-  color: black;  
+.learn-more {
+  color: black;
   background-color: #f7dc79;
   border: none;
   border-radius: 3px;
   padding: 10px 20px 10px 20px;
 }
-.learn-more:hover{
+.learn-more:hover {
   padding: 13px 25px 13px 25px;
   cursor: pointer;
 }
-#copyright{
+#copyright {
   color: rgb(255, 255, 255);
   position: absolute;
   bottom: 0;
@@ -389,15 +473,15 @@ footer hr{
   padding-bottom: 5px;
   text-align: center;
 }
-@media(max-width: 768px){
-  footer{
+@media (max-width: 768px) {
+  footer {
     padding-bottom: 80px;
   }
-  .future{
+  .future {
     font-size: 1em;
   }
-  .join{
+  .join {
     font-size: 1.5em;
-  }  
+  }
 }
 /* Footer end */
