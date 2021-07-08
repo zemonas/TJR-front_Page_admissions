@@ -16,3 +16,9 @@ const s_one_ob = new IntersectionObserver(function(entries,s_one_ob){
 },
 s_one_opt);
 s_one_ob.observe(s_one);
+
+
+// Footer stuff
+const p = document.getElementById("copyright")
+let date = new Date()
+p.innerText += ` ${date.getFullYear()}  |  The Jamia Review Team`
