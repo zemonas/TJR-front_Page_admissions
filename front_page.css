@@ -174,7 +174,7 @@ a:hover {
 .parallax {
   min-height: 500px;
   width: 100%;
-  background-image: url("../images/jamia.jpg");
+  background-image: url("./images/jamia.jpg");
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
