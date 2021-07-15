@@ -11,6 +11,9 @@
   /*transition of everything is set*/
   transition: all 0.3s;
 }
+button {
+  cursor: pointer;
+}
 /*header*/
 
 header {
@@ -171,7 +174,7 @@ a:hover {
 .parallax {
   min-height: 500px;
   width: 100%;
-  background-image: url("images/jamia.jpg");
+  background-image: url("../images/jamia.jpg");
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
@@ -324,6 +327,7 @@ p {
   margin: auto;
   color: darkblue;
 }
+/*course card container*/
 .courses {
   margin: 5% 0 0;
   padding-bottom: 5%;
@@ -336,9 +340,11 @@ p {
   flex-wrap: wrap;
   justify-content: space-evenly;
 }
+/*course card*/
 .course {
-  background-color: bisque;
+  background-color: #f1faee;
   min-width: 300px;
+  max-width: 300px;
   height: 170px;
   margin: 5px;
   display: flex;
@@ -357,10 +363,10 @@ p {
 .course h3 {
   width: 100%;
   padding: 1em;
-  color: darkblue;
+  color: #1d3557;
 }
 .bt3 {
-  background-color: #d00000;
+  background-color: #457b9d;
   outline: none;
   border: none;
   padding: 0.5em 1em;
