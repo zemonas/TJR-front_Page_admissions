@@ -76,11 +76,11 @@ tbody tr:hover > td {
 .details ul {
   padding-bottom: 40px;
 }
-/* @media only screen and (max-width: 768px) { 
+/* @media only screen and (max-width: 768px) { */
 table {
-  width: 100%;
+  width: 90%;
 }
-} 
+/* } 
   .last {
     margin-bottom: 100px;
   }
