@@ -39,6 +39,12 @@ td {
   border-collapse: collapse;
   background-color: #457b9d;
 }
+@media (max-width: 599px) {
+  th,
+  td {
+    font-size: 14px;
+  }
+}
 .table-1 td {
   text-align: center;
 }
