@@ -24,7 +24,7 @@ table {
   margin-right: auto;
   box-shadow: 0 5px 9px 3px rgba(0, 0, 0, 0.2);
   border-radius: 10px;
-  background: #457b9d;
+  background: #a8dadc;
 }
 
 tr {
@@ -37,7 +37,8 @@ td {
   padding: 12px;
   text-align: left;
   border-collapse: collapse;
-  background-color: #457b9d;
+  background-color: #a8dadc;
+  color: #1d3557;
 }
 @media (max-width: 599px) {
   th,
@@ -69,7 +70,8 @@ tr:last-child td {
 }
 
 tbody tr:hover > td {
-  background-color: #a8dadc;
+  background-color: #457b9d;
+  color: #edf2f4;
   transform: scale(1.02);
   border-radius: 0;
   border-collapse: collapse;
